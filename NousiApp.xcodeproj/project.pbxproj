@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D66D764228AFD65A00BA701B /* NousiAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66D764128AFD65A00BA701B /* NousiAppApp.swift */; };
+		D66D764428AFD65A00BA701B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66D764328AFD65A00BA701B /* ContentView.swift */; };
+		D66D764628AFD66100BA701B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D66D764528AFD66100BA701B /* Assets.xcassets */; };
+		D66D764928AFD66100BA701B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D66D764828AFD66100BA701B /* Preview Assets.xcassets */; };
+		D66D765328AFD66100BA701B /* NousiAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66D765228AFD66100BA701B /* NousiAppTests.swift */; };
+		D66D765D28AFD66100BA701B /* NousiAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66D765C28AFD66100BA701B /* NousiAppUITests.swift */; };
+		D66D765F28AFD66100BA701B /* NousiAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66D765E28AFD66100BA701B /* NousiAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D66D764F28AFD66100BA701B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D66D763628AFD65A00BA701B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D66D763D28AFD65A00BA701B;
+			remoteInfo = NousiApp;
+		};
+		D66D765928AFD66100BA701B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D66D763628AFD65A00BA701B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D66D763D28AFD65A00BA701B;
+			remoteInfo = NousiApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D66D763E28AFD65A00BA701B /* NousiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NousiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D66D764128AFD65A00BA701B /* NousiAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NousiAppApp.swift; sourceTree = "<group>"; };
+		D66D764328AFD65A00BA701B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D66D764528AFD66100BA701B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D66D764828AFD66100BA701B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D66D764E28AFD66100BA701B /* NousiAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NousiAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D66D765228AFD66100BA701B /* NousiAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NousiAppTests.swift; sourceTree = "<group>"; };
+		D66D765828AFD66100BA701B /* NousiAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NousiAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D66D765C28AFD66100BA701B /* NousiAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NousiAppUITests.swift; sourceTree = "<group>"; };
+		D66D765E28AFD66100BA701B /* NousiAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NousiAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D66D763B28AFD65A00BA701B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D66D764B28AFD66100BA701B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D66D765528AFD66100BA701B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D66D763528AFD65A00BA701B = {
+			isa = PBXGroup;
+			children = (
+				D66D764028AFD65A00BA701B /* NousiApp */,
+				D66D765128AFD66100BA701B /* NousiAppTests */,
+				D66D765B28AFD66100BA701B /* NousiAppUITests */,
+				D66D763F28AFD65A00BA701B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D66D763F28AFD65A00BA701B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D66D763E28AFD65A00BA701B /* NousiApp.app */,
+				D66D764E28AFD66100BA701B /* NousiAppTests.xctest */,
+				D66D765828AFD66100BA701B /* NousiAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D66D764028AFD65A00BA701B /* NousiApp */ = {
+			isa = PBXGroup;
+			children = (
+				D66D764128AFD65A00BA701B /* NousiAppApp.swift */,
+				D66D764328AFD65A00BA701B /* ContentView.swift */,
+				D66D764528AFD66100BA701B /* Assets.xcassets */,
+				D66D764728AFD66100BA701B /* Preview Content */,
+			);
+			path = NousiApp;
+			sourceTree = "<group>";
+		};
+		D66D764728AFD66100BA701B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D66D764828AFD66100BA701B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D66D765128AFD66100BA701B /* NousiAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				D66D765228AFD66100BA701B /* NousiAppTests.swift */,
+			);
+			path = NousiAppTests;
+			sourceTree = "<group>";
+		};
+		D66D765B28AFD66100BA701B /* NousiAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D66D765C28AFD66100BA701B /* NousiAppUITests.swift */,
+				D66D765E28AFD66100BA701B /* NousiAppUITestsLaunchTests.swift */,
+			);
+			path = NousiAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D66D763D28AFD65A00BA701B /* NousiApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D66D766228AFD66100BA701B /* Build configuration list for PBXNativeTarget "NousiApp" */;
+			buildPhases = (
+				D66D763A28AFD65A00BA701B /* Sources */,
+				D66D763B28AFD65A00BA701B /* Frameworks */,
+				D66D763C28AFD65A00BA701B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NousiApp;
+			productName = NousiApp;
+			productReference = D66D763E28AFD65A00BA701B /* NousiApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D66D764D28AFD66100BA701B /* NousiAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D66D766528AFD66100BA701B /* Build configuration list for PBXNativeTarget "NousiAppTests" */;
+			buildPhases = (
+				D66D764A28AFD66100BA701B /* Sources */,
+				D66D764B28AFD66100BA701B /* Frameworks */,
+				D66D764C28AFD66100BA701B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D66D765028AFD66100BA701B /* PBXTargetDependency */,
+			);
+			name = NousiAppTests;
+			productName = NousiAppTests;
+			productReference = D66D764E28AFD66100BA701B /* NousiAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D66D765728AFD66100BA701B /* NousiAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D66D766828AFD66100BA701B /* Build configuration list for PBXNativeTarget "NousiAppUITests" */;
+			buildPhases = (
+				D66D765428AFD66100BA701B /* Sources */,
+				D66D765528AFD66100BA701B /* Frameworks */,
+				D66D765628AFD66100BA701B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D66D765A28AFD66100BA701B /* PBXTargetDependency */,
+			);
+			name = NousiAppUITests;
+			productName = NousiAppUITests;
+			productReference = D66D765828AFD66100BA701B /* NousiAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D66D763628AFD65A00BA701B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					D66D763D28AFD65A00BA701B = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					D66D764D28AFD66100BA701B = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = D66D763D28AFD65A00BA701B;
+					};
+					D66D765728AFD66100BA701B = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = D66D763D28AFD65A00BA701B;
+					};
+				};
+			};
+			buildConfigurationList = D66D763928AFD65A00BA701B /* Build configuration list for PBXProject "NousiApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D66D763528AFD65A00BA701B;
+			productRefGroup = D66D763F28AFD65A00BA701B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D66D763D28AFD65A00BA701B /* NousiApp */,
+				D66D764D28AFD66100BA701B /* NousiAppTests */,
+				D66D765728AFD66100BA701B /* NousiAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D66D763C28AFD65A00BA701B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D66D764928AFD66100BA701B /* Preview Assets.xcassets in Resources */,
+				D66D764628AFD66100BA701B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D66D764C28AFD66100BA701B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D66D765628AFD66100BA701B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D66D763A28AFD65A00BA701B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D66D764428AFD65A00BA701B /* ContentView.swift in Sources */,
+				D66D764228AFD65A00BA701B /* NousiAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D66D764A28AFD66100BA701B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D66D765328AFD66100BA701B /* NousiAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D66D765428AFD66100BA701B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D66D765F28AFD66100BA701B /* NousiAppUITestsLaunchTests.swift in Sources */,
+				D66D765D28AFD66100BA701B /* NousiAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D66D765028AFD66100BA701B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D66D763D28AFD65A00BA701B /* NousiApp */;
+			targetProxy = D66D764F28AFD66100BA701B /* PBXContainerItemProxy */;
+		};
+		D66D765A28AFD66100BA701B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D66D763D28AFD65A00BA701B /* NousiApp */;
+			targetProxy = D66D765928AFD66100BA701B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D66D766028AFD66100BA701B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D66D766128AFD66100BA701B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D66D766328AFD66100BA701B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NousiApp/Preview Content\"";
+				DEVELOPMENT_TEAM = MCC2B4P5MZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Copland.NousiApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D66D766428AFD66100BA701B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NousiApp/Preview Content\"";
+				DEVELOPMENT_TEAM = MCC2B4P5MZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Copland.NousiApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D66D766628AFD66100BA701B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MCC2B4P5MZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Copland.NousiAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NousiApp.app/NousiApp";
+			};
+			name = Debug;
+		};
+		D66D766728AFD66100BA701B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MCC2B4P5MZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Copland.NousiAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NousiApp.app/NousiApp";
+			};
+			name = Release;
+		};
+		D66D766928AFD66100BA701B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MCC2B4P5MZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Copland.NousiAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NousiApp;
+			};
+			name = Debug;
+		};
+		D66D766A28AFD66100BA701B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MCC2B4P5MZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Copland.NousiAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NousiApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D66D763928AFD65A00BA701B /* Build configuration list for PBXProject "NousiApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D66D766028AFD66100BA701B /* Debug */,
+				D66D766128AFD66100BA701B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D66D766228AFD66100BA701B /* Build configuration list for PBXNativeTarget "NousiApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D66D766328AFD66100BA701B /* Debug */,
+				D66D766428AFD66100BA701B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D66D766528AFD66100BA701B /* Build configuration list for PBXNativeTarget "NousiAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D66D766628AFD66100BA701B /* Debug */,
+				D66D766728AFD66100BA701B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D66D766828AFD66100BA701B /* Build configuration list for PBXNativeTarget "NousiAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D66D766928AFD66100BA701B /* Debug */,
+				D66D766A28AFD66100BA701B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D66D763628AFD65A00BA701B /* Project object */;
+}
