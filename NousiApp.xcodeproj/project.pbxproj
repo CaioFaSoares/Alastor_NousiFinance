@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D61E019628AFFDD8002F7B27 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E019528AFFDD8002F7B27 /* CoinModel.swift */; };
+		D61E019928AFFE12002F7B27 /* CoingeckoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E019828AFFE12002F7B27 /* CoingeckoAPI.swift */; };
+		D61E019B28AFFE1C002F7B27 /* BackendAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E019A28AFFE1C002F7B27 /* BackendAPI.swift */; };
 		D66D764228AFD65A00BA701B /* NousiAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66D764128AFD65A00BA701B /* NousiAppApp.swift */; };
 		D66D764428AFD65A00BA701B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66D764328AFD65A00BA701B /* ContentView.swift */; };
 		D66D764628AFD66100BA701B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D66D764528AFD66100BA701B /* Assets.xcassets */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D61E019528AFFDD8002F7B27 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
+		D61E019828AFFE12002F7B27 /* CoingeckoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoingeckoAPI.swift; sourceTree = "<group>"; };
+		D61E019A28AFFE1C002F7B27 /* BackendAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendAPI.swift; sourceTree = "<group>"; };
 		D66D763E28AFD65A00BA701B /* NousiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NousiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D66D764128AFD65A00BA701B /* NousiAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NousiAppApp.swift; sourceTree = "<group>"; };
 		D66D764328AFD65A00BA701B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +77,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D61E019228AFFD7C002F7B27 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D61E019528AFFDD8002F7B27 /* CoinModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D61E019328AFFD82002F7B27 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D61E019428AFFD89002F7B27 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D61E019728AFFDDC002F7B27 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D61E019828AFFE12002F7B27 /* CoingeckoAPI.swift */,
+				D61E019A28AFFE1C002F7B27 /* BackendAPI.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		D66D763528AFD65A00BA701B = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +131,10 @@
 		D66D764028AFD65A00BA701B /* NousiApp */ = {
 			isa = PBXGroup;
 			children = (
+				D61E019728AFFDDC002F7B27 /* Services */,
+				D61E019228AFFD7C002F7B27 /* Models */,
+				D61E019328AFFD82002F7B27 /* Views */,
+				D61E019428AFFD89002F7B27 /* ViewModels */,
 				D66D764128AFD65A00BA701B /* NousiAppApp.swift */,
 				D66D764328AFD65A00BA701B /* ContentView.swift */,
 				D66D764528AFD66100BA701B /* Assets.xcassets */,
@@ -257,7 +298,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D61E019B28AFFE1C002F7B27 /* BackendAPI.swift in Sources */,
 				D66D764428AFD65A00BA701B /* ContentView.swift in Sources */,
+				D61E019928AFFE12002F7B27 /* CoingeckoAPI.swift in Sources */,
+				D61E019628AFFDD8002F7B27 /* CoinModel.swift in Sources */,
 				D66D764228AFD65A00BA701B /* NousiAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
