@@ -12,15 +12,10 @@ struct com_NL_TeamsChoice: View {
     @Binding var choices: [TeamChoice]
     
     var body: some View {
-        //        List{
-//        Section {
             ForEach (choices, id: \.id) { choice in
-                VStack {
-                    HStack{
-                        Text(choice.choice_fullname)
-                            .fontWeight(.bold)
-                        //                            Spacer()
-                    }
+                VStack (alignment: .leading) {
+                    Text(choice.choice_fullname)
+                        .fontWeight(.bold)
                     Text(choice.choice_explanation)
                         .foregroundColor(Color.gray)
                         .frame(alignment: .leading)
