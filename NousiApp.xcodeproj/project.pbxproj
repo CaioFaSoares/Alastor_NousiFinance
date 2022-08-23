@@ -115,13 +115,13 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		D61E019428AFFD89002F7B27 /* ViewModels */ = {
+		D61E019428AFFD89002F7B27 /* Components */ = {
 			isa = PBXGroup;
 			children = (
 				D6FECA2428B5435F006B39AB /* NewsLetter Components */,
 				D6FECA2528B5436C006B39AB /* AllCoins Components */,
 			);
-			path = ViewModels;
+			path = Components;
 			sourceTree = "<group>";
 		};
 		D61E019728AFFDDC002F7B27 /* Services */ = {
@@ -158,11 +158,11 @@
 			isa = PBXGroup;
 			children = (
 				D66D764128AFD65A00BA701B /* NousiApp.swift */,
+				D66D764328AFD65A00BA701B /* ContentView.swift */,
 				D61E019728AFFDDC002F7B27 /* Services */,
 				D61E019228AFFD7C002F7B27 /* Models */,
 				D61E019328AFFD82002F7B27 /* Views */,
-				D61E019428AFFD89002F7B27 /* ViewModels */,
-				D66D764328AFD65A00BA701B /* ContentView.swift */,
+				D61E019428AFFD89002F7B27 /* Components */,
 				D66D764528AFD66100BA701B /* Assets.xcassets */,
 				D66D764728AFD66100BA701B /* Preview Content */,
 			);
