@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		858551AD28B56ADE00970C75 /* NotFoundList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858551AC28B56ADE00970C75 /* NotFoundList.swift */; };
 		D61E019628AFFDD8002F7B27 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E019528AFFDD8002F7B27 /* CoinModel.swift */; };
 		D61E019928AFFE12002F7B27 /* CoingeckoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E019828AFFE12002F7B27 /* CoingeckoAPI.swift */; };
 		D61E019D28B3B025002F7B27 /* NewsLetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E019C28B3B025002F7B27 /* NewsLetter.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		858551AC28B56ADE00970C75 /* NotFoundList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotFoundList.swift; sourceTree = "<group>"; };
 		D61E019528AFFDD8002F7B27 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
 		D61E019828AFFE12002F7B27 /* CoingeckoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoingeckoAPI.swift; sourceTree = "<group>"; };
 		D61E019C28B3B025002F7B27 /* NewsLetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsLetter.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				D6FECA2228B541DE006B39AB /* AC_MarketCap.swift */,
+				858551AC28B56ADE00970C75 /* NotFoundList.swift */,
 			);
 			path = "AllCoins Components";
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				D61E01AE28B40EC3002F7B27 /* About.swift in Sources */,
 				D61E019628AFFDD8002F7B27 /* CoinModel.swift in Sources */,
 				D61E01A228B3C77F002F7B27 /* n8nAPI.swift in Sources */,
+				858551AD28B56ADE00970C75 /* NotFoundList.swift in Sources */,
 				D61E019D28B3B025002F7B27 /* NewsLetter.swift in Sources */,
 				D66D764228AFD65A00BA701B /* NousiApp.swift in Sources */,
 				D61E01A828B3F47A002F7B27 /* TeamChoice.swift in Sources */,
