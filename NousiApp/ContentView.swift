@@ -36,6 +36,12 @@ struct ContentView: View {
                     Label("All Coins", systemImage: "bitcoinsign.circle")
                 }
                 
+                NavigationView{
+                    AboutView()
+                }.tabItem {
+                    Label("About", systemImage: "pencil.and.outline")
+                }
+                
             }
         
             //We should look into how to multithread this.
