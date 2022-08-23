@@ -11,7 +11,7 @@ struct TeamChoice: Decodable {
 
     var id: String //bitcoin
     var name: String // Bitcoin
-    var commentary: String //
+    var commentary: String //Comentário do analista sobre a moeda em questão
     
 }
 
