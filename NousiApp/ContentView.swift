@@ -18,42 +18,46 @@ struct ContentView: View {
     @State private var coins = [Coin]()
     
     var body: some View {
-            TabView() {
-                
-                //Read on Swift documentation that we aren't supposed to put TabViews inside of NavigationViews. That's why the refactoring
-                
-                NavigationView{
-                    NewsLetter(indexes: $indexes, choices: $choices)
-                        
-                }.tabItem {
-                    Label("Daily View", systemImage: "calendar.day.timeline.leading")
-                }
-                
-                NavigationView{
-                    AllCoins(coins: $coins)
-                        
-                }.tabItem {
-                    Label("All Coins", systemImage: "bitcoinsign.circle")
-                }
-                
-                NavigationView{
-                    AboutView()
-                }.tabItem {
-                    Label("About", systemImage: "pencil.and.outline")
-                }
-                
+        TabView() {
+            
+            //Read on Swift documentation that we aren't supposed to put TabViews inside of NavigationViews. That's why the refactoring
+            
+            NavigationView{
+                NewsLetter(indexes: $indexes, choices: $choices)
+                    
+            }.tabItem {
+                Label("Daily View", systemImage: "calendar.day.timeline.leading")
             }
-        
-            //We should look into how to multithread this.
-        
-            .task {
-                
-                await coins = GeckoAPI.getAllCoinsMarketData()
-                
-                await indexes = n8nAPI.fetchIndexes()
-                await choices = n8nAPI.fetchTeamChoice()
-                
+            
+            NavigationView{
+                AllCoins(coins: $coins)
+                    
+            }.tabItem {
+                Label("All Coins", systemImage: "bitcoinsign.circle")
             }
+            
+            NavigationView{
+                AboutView()
+            }.tabItem {
+                Label("About", systemImage: "pencil.and.outline")
+            }
+            
+        }
+    
+        //We should look into how to multithread this.
+    
+        .task{
+            Task {
+                self.coins = await GeckoAPI.getAllCoinsMarketData()
+            }
+            Task {
+                self.indexes = await n8nAPI.fetchIndexes()
+            }
+            Task {
+                self.choices = await n8nAPI.fetchTeamChoice()
+            }
+                            
+        }
     }
 }
 
