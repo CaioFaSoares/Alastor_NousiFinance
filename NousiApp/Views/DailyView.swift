@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct NewsLetter: View {
+struct DailyView: View {
     
     @Binding var indexes: [Index]
     @Binding var choices: [TeamChoice]

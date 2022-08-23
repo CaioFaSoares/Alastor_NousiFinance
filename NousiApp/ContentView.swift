@@ -23,7 +23,7 @@ struct ContentView: View {
             //Read on Swift documentation that we aren't supposed to put TabViews inside of NavigationViews. That's why the refactoring
             
             NavigationView{
-                NewsLetter(indexes: $indexes, choices: $choices)
+                DailyView(indexes: $indexes, choices: $choices)
                     
             }.tabItem {
                 Label("Daily View", systemImage: "calendar.day.timeline.leading")
@@ -37,14 +37,15 @@ struct ContentView: View {
             }
             
             NavigationView{
-                AboutView()
+                NewsFeed()
             }.tabItem {
-                Label("About", systemImage: "pencil.and.outline")
+                Label("News Feed", systemImage: "newspaper")
             }
             
         }
-    
-        //We should look into how to multithread this.
+        
+        .animation(.easeInOut)
+        .transition(.slide)
     
         .task{
             Task {
@@ -59,6 +60,7 @@ struct ContentView: View {
                             
         }
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
