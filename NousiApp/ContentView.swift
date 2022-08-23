@@ -14,7 +14,6 @@ struct ContentView: View {
     
     @State private var choices = [TeamChoice]()
     @State private var indexes = [Index]()
-    
     @State private var coins = [Coin]()
     
     var body: some View {
@@ -46,7 +45,7 @@ struct ContentView: View {
         
         .animation(.easeInOut)
         .transition(.slide)
-    
+ 
         .task{
             Task {
                 self.coins = await GeckoAPI.getAllCoinsMarketData()
