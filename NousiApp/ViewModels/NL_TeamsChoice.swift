@@ -14,9 +14,9 @@ struct com_NL_TeamsChoice: View {
     var body: some View {
             ForEach (choices, id: \.id) { choice in
                 VStack (alignment: .leading) {
-                    Text(choice.choice_fullname)
+                    Text(choice.name)
                         .fontWeight(.bold)
-                    Text(choice.choice_explanation)
+                    Text(choice.commentary)
                         .foregroundColor(Color.gray)
                         .frame(alignment: .leading)
                 }
