@@ -24,6 +24,7 @@
 		D66D765328AFD66100BA701B /* NousiAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66D765228AFD66100BA701B /* NousiAppTests.swift */; };
 		D66D765D28AFD66100BA701B /* NousiAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66D765C28AFD66100BA701B /* NousiAppUITests.swift */; };
 		D66D765F28AFD66100BA701B /* NousiAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66D765E28AFD66100BA701B /* NousiAppUITestsLaunchTests.swift */; };
+		D6871CAA28B57F9D00A166EC /* NotFoundList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6871CA928B57F9D00A166EC /* NotFoundList.swift */; };
 		D6FECA2128B5401D006B39AB /* AllCoins.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FECA2028B5401D006B39AB /* AllCoins.swift */; };
 		D6FECA2328B541DE006B39AB /* SortedByMarketCap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FECA2228B541DE006B39AB /* SortedByMarketCap.swift */; };
 		D6FECA2728B5601D006B39AB /* NewsFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FECA2628B5601D006B39AB /* NewsFeed.swift */; };
@@ -67,6 +68,7 @@
 		D66D765828AFD66100BA701B /* NousiAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NousiAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D66D765C28AFD66100BA701B /* NousiAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NousiAppUITests.swift; sourceTree = "<group>"; };
 		D66D765E28AFD66100BA701B /* NousiAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NousiAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D6871CA928B57F9D00A166EC /* NotFoundList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotFoundList.swift; sourceTree = "<group>"; };
 		D6FECA2028B5401D006B39AB /* AllCoins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCoins.swift; sourceTree = "<group>"; };
 		D6FECA2228B541DE006B39AB /* SortedByMarketCap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortedByMarketCap.swift; sourceTree = "<group>"; };
 		D6FECA2628B5601D006B39AB /* NewsFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeed.swift; sourceTree = "<group>"; };
@@ -100,9 +102,9 @@
 		D61E019228AFFD7C002F7B27 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D625576628B4618E00D48ADB /* TeamChoiceModel.swift */,
 				D61E019528AFFDD8002F7B27 /* CoinModel.swift */,
 				D61E01A528B3E568002F7B27 /* IndexModel.swift */,
-				D625576628B4618E00D48ADB /* TeamChoiceModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -210,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				D6FECA2228B541DE006B39AB /* SortedByMarketCap.swift */,
+				D6871CA928B57F9D00A166EC /* NotFoundList.swift */,
 			);
 			path = "AllCoins Components";
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				D61E019928AFFE12002F7B27 /* CoingeckoAPI.swift in Sources */,
 				D6FECA2328B541DE006B39AB /* SortedByMarketCap.swift in Sources */,
 				D61E01AE28B40EC3002F7B27 /* About.swift in Sources */,
+				D6871CAA28B57F9D00A166EC /* NotFoundList.swift in Sources */,
 				D61E019628AFFDD8002F7B27 /* CoinModel.swift in Sources */,
 				D61E01A228B3C77F002F7B27 /* n8nAPI.swift in Sources */,
 				D61E019D28B3B025002F7B27 /* DailyView.swift in Sources */,

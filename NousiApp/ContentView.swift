@@ -14,7 +14,6 @@ struct ContentView: View {
     
     @State private var choices = [TeamChoice]()
     @State private var indexes = [Index]()
-    
     @State private var coins = [Coin]()
     
     var body: some View {
@@ -23,7 +22,7 @@ struct ContentView: View {
             //Read on Swift documentation that we aren't supposed to put TabViews inside of NavigationViews. That's why the refactoring
             
             NavigationView{
-                DailyView(indexes: $indexes, choices: $choices)
+                DailyView(indexes: $indexes, choices: $choices, coins: $coins)
                     
             }.tabItem {
                 Label("Daily View", systemImage: "calendar.day.timeline.leading")
@@ -46,7 +45,7 @@ struct ContentView: View {
         
         .animation(.easeInOut)
         .transition(.slide)
-    
+ 
         .task{
             Task {
                 self.coins = await GeckoAPI.getAllCoinsMarketData()

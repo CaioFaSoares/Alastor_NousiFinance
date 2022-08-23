@@ -12,6 +12,8 @@ struct DailyView: View {
     @Binding var indexes: [Index]
     @Binding var choices: [TeamChoice]
     
+    @Binding var coins: [Coin]
+    
     var body: some View {
         VStack {
             List {
@@ -24,7 +26,7 @@ struct DailyView: View {
                 }
                 
                 Section {
-                    com_NL_TeamsChoice(choices: $choices)
+                    com_NL_TeamsChoice(choices: $choices, coins: $coins)
                 } header: {
                     Text("Team's Choices")
                 } footer: {
