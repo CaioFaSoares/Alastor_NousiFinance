@@ -8,6 +8,7 @@
 import Foundation
 
 struct GeckoApi {
+    
     static let baseURL: String = "api.coingecko.com/api/v3"
     
     
