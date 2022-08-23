@@ -8,15 +8,39 @@
 import SwiftUI
 
 struct NewsLetter: View {
+    
+    @State private var choices = [TeamChoice]()
+    @State private var indexes = [Index]()
+    
     var body: some View {
         VStack {
-            com_NL_MarketIndicator()
-            com_NL_TeamsChoice()
-            Spacer()
-        }   .navigationBarHidden(false)
-            .navigationBarTitle("News Letter")
+            List {
+                Section {
+                    com_NL_MarketIndicator(indexes: $indexes)
+                } header: {
+                    Text("Market Indicators")
+                } footer: {
+                    Text("Data source on the about page.")
+                }
+                
+                Section {
+                    com_NL_TeamsChoice(choices: $choices)
+                } header: {
+                    Text("Team's Choices")
+                } footer: {
+                    Text("This is not a financial advice.")
+                }
+            }
+            .task {
+                await choices = API_N8N.fetchTeamChoice()
+                await indexes = API_N8N.fetchIndexes()
+            }
+            .listStyle(.insetGrouped)
+        }
+        .navigationBarHidden(false)
+        .navigationBarTitle("News Letter")
     }
-        
+    
 }
 
 struct NewsLetter_Previews: PreviewProvider {

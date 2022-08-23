@@ -8,11 +8,8 @@
 import Foundation
 
 struct TeamChoice: Decodable {
-    
+    let id: Int
     let choice_identifier: String
     let choice_fullname: String
     let choice_explanation: String
-    
-    let id: Int
-    
 }
