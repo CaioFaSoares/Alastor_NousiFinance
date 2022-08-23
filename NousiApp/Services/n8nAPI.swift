@@ -11,7 +11,7 @@ enum n8n_error: Error {
     case n8n_invalidServerResponse
 }
 
-class API_N8N {
+class n8nAPI {
     
     static func fetchIndexes() async -> [Index] {
         
@@ -46,7 +46,7 @@ class API_N8N {
             
             return decodedResponse
         } catch {
-            print("DEBUG: Erro retornado no fetch das escolhas")
+            print(error)
         }
         return []
     }

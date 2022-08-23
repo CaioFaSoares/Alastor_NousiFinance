@@ -12,12 +12,12 @@ struct NousiApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .onAppear{
-                    Task{
-                        let res = await GeckoApi.getAllCoinsMarketData()
-                        print(res)
-                    }
+//                .onAppear{
+//                    Task{
+//                        let res3 = await GeckoAPI.getAllCoinsMarketData()
+//                        print(res3)
+//                    }
                 }
         }
-    }
 }
+

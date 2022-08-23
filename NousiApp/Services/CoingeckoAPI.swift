@@ -7,13 +7,13 @@
 
 import Foundation
 
-struct GeckoApi {
+struct GeckoAPI {
     
     static let baseURL: String = "api.coingecko.com/api/v3"
     
     
     static func getAllCoinsMarketData(currency: String = "usd", ids: String = "", category: String = "", order: String = "market_cap_desc", sparkline: Bool = false) async -> [Coin]{
-        var url = URLComponents(string: GeckoApi.baseURL + "/coins/markets")!
+        var url = URLComponents(string: GeckoAPI.baseURL + "/coins/markets")!
         url.scheme = "https"
         
         url.queryItems = [
@@ -32,12 +32,18 @@ struct GeckoApi {
         let decoder = JSONDecoder()
 //        decoder.keyDecodingStrategy = .convertFromSnakeCase
         
+        print("DEBUG: Iniciando fetch da Coingecko")
+        
         do {
             let (data, response) = try await URLSession.shared.data(for: request)
             let coins = try decoder.decode([Coin].self, from: data)
+            
+            print("DEBUG: Fetch da Coingecko concluido")
+            
             return coins
             
         }catch {
+            
             print(error)
             
         }
