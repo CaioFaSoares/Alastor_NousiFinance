@@ -32,8 +32,8 @@ struct NewsLetter: View {
                 }
             }
             .task {
-                await choices = API_N8N.fetchTeamChoice()
                 await indexes = API_N8N.fetchIndexes()
+                await choices = API_N8N.fetchTeamChoice()
             }
             .listStyle(.insetGrouped)
         }
