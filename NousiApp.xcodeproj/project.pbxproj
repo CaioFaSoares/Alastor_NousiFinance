@@ -123,7 +123,7 @@
 		D61E019428AFFD89002F7B27 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				D6FECA2428B5435F006B39AB /* NewsLetter Components */,
+				D6FECA2428B5435F006B39AB /* TeamChoice Components */,
 				D6FECA2528B5436C006B39AB /* AllCoins Components */,
 			);
 			path = Components;
@@ -199,13 +199,13 @@
 			path = NousiAppUITests;
 			sourceTree = "<group>";
 		};
-		D6FECA2428B5435F006B39AB /* NewsLetter Components */ = {
+		D6FECA2428B5435F006B39AB /* TeamChoice Components */ = {
 			isa = PBXGroup;
 			children = (
 				D61E019E28B3C696002F7B27 /* MarketIndicator.swift */,
 				D61E01A728B3F47A002F7B27 /* TeamChoice.swift */,
 			);
-			path = "NewsLetter Components";
+			path = "TeamChoice Components";
 			sourceTree = "<group>";
 		};
 		D6FECA2528B5436C006B39AB /* AllCoins Components */ = {

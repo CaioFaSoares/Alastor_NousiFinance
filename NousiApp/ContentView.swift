@@ -22,7 +22,7 @@ struct ContentView: View {
             //Read on Swift documentation that we aren't supposed to put TabViews inside of NavigationViews. That's why the refactoring
             
             NavigationView{
-                DailyView(indexes: $indexes, choices: $choices, coins: $coins)
+                DailyView(indexes: $indexes, choices: $choices)
                     
             }.tabItem {
                 Label("Daily View", systemImage: "calendar.day.timeline.leading")

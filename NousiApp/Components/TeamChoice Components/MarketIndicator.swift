@@ -18,7 +18,7 @@ struct com_NL_MarketIndicator: View {
                 HStack {
                     Text(index.index_full_name)
                     Spacer()
-                    Text(index.index_value)
+                    Text("\(index.index_value)%")
                         .fontWeight(.bold)
                         .foregroundColor(com_NL_MarketIndicator.index_value_color(index_value: index.index_value))
                 }
