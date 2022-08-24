@@ -42,9 +42,6 @@ struct ContentView: View {
             }
             
         }
-        
-        .animation(.easeInOut)
-        .transition(.slide)
  
         .task{
             Task {

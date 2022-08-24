@@ -49,7 +49,7 @@ struct AllCoins: View {
             }
             .navigationTitle("All Coins")
             .navigationBarTitleDisplayMode(.large)
-            .listStyle(.inset)
+            .listStyle(.grouped)
             .searchable(text: $searchCoin, placement: .navigationBarDrawer(displayMode: .always))
             .overlay {
                 if searchedCoins.isEmpty {
