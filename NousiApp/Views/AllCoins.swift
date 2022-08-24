@@ -19,7 +19,22 @@ struct AllCoins: View {
                     Section {
                             ForEach (searchedCoins, id: \.id) { coin in
                                 HStack {
+                                    AsyncImage(url: URL(string: coin.image)!) { image in
+                                        image.resizable()
+                                    } placeholder: {
+                                        ProgressView()
+                                    } .frame(width: 20, height: 20)
                                     Text(coin.name)
+                                        .fontWeight(.bold)
+                                    Spacer()
+                                    Text(String(format: "$ %.2f", coin.price))
+                                        .font(.system(size: 14))
+                                        .fontWeight(.light)
+                                        .foregroundColor(Color.gray)
+                                    Text("\(com_NL_TeamsChoice.isChoicePositiveIndicator(input: coin.priceChangePercentage24h))\(String(format: "%.2f", coin.priceChangePercentage24h))%")
+                                        .font(.system(size: 14))
+                                        .fontWeight(.bold)
+                                        .foregroundColor(com_NL_TeamsChoice.isChoicePositiveColor(input: coin.priceChangePercentage24h))
                                 }
                             }
     //                    com_AC_AllCoinsByMarketCap(coins: $searchedCoins)
