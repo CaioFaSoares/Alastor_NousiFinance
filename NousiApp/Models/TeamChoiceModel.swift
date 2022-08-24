@@ -13,10 +13,22 @@ struct TeamChoice: Decodable {
     var name: String // Bitcoin
     var commentary: String //Comentário do analista sobre a moeda em questão
     
-    var current_price: Double
-    var price_change_percentage_24h: Double
+    var price: Double
+    var priceChangePercentage24h: Double
+    
+    var high24h: Double
+    var low24h: Double
     
     var image: String
+    
+    enum CodingKeys: String, CodingKey {
+        case id, name, image, commentary
+        case price = "current_price"
+        case priceChangePercentage24h = "price_change_percentage_24h"
+        case high24h = "high_24h"
+        case low24h = "low_24h"
+        
+    }
     
 }
 
