@@ -27,14 +27,16 @@ struct AllCoins: View {
                                     Text(coin.name)
                                         .fontWeight(.bold)
                                     Spacer()
-                                    Text(String(format: "$ %.2f", coin.price))
-                                        .font(.system(size: 14))
-                                        .fontWeight(.light)
-                                        .foregroundColor(Color.gray)
-                                    Text("\(com_NL_TeamsChoice.isChoicePositiveIndicator(input: coin.priceChangePercentage24h))\(String(format: "%.2f", coin.priceChangePercentage24h))%")
-                                        .font(.system(size: 14))
-                                        .fontWeight(.bold)
-                                        .foregroundColor(com_NL_TeamsChoice.isChoicePositiveColor(input: coin.priceChangePercentage24h))
+                                    VStack (alignment: .trailing){
+                                        Text("\(com_NL_TeamsChoice.isChoicePositiveIndicator(input: coin.priceChangePercentage24h))\(String(format: "%.2f", coin.priceChangePercentage24h))%")
+                                            .font(.system(size: 14))
+                                            .fontWeight(.bold)
+                                            .foregroundColor(com_NL_TeamsChoice.isChoicePositiveColor(input: coin.priceChangePercentage24h))
+                                        Text(String(format: "$ %.2f", coin.price))
+                                            .font(.system(size: 14))
+                                            .fontWeight(.light)
+                                            .foregroundColor(Color.gray)
+                                    }
                                 }
                             }
     //                    com_AC_AllCoinsByMarketCap(coins: $searchedCoins)
@@ -47,7 +49,7 @@ struct AllCoins: View {
             }
             .navigationTitle("All Coins")
             .navigationBarTitleDisplayMode(.large)
-            .listStyle(.insetGrouped)
+            .listStyle(.inset)
             .searchable(text: $searchCoin, placement: .navigationBarDrawer(displayMode: .always))
             .overlay {
                 if searchedCoins.isEmpty {

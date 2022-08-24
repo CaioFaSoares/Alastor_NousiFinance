@@ -32,7 +32,7 @@ struct DailyView: View {
                 }
             }
             .navigationTitle("Daily View")
-            .listStyle(.insetGrouped)
+            .listStyle(.grouped)
         }
     }
     

@@ -17,6 +17,7 @@ struct com_NL_MarketIndicator: View {
             ForEach (indexes, id: \.id )  { index in
                 HStack {
                     Text(index.index_full_name)
+                        .fontWeight(.bold)
                     Spacer()
                     Text("\(index.index_value)%")
                         .fontWeight(.bold)
