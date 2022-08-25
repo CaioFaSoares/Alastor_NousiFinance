@@ -13,6 +13,8 @@ struct NousiApp: App {
         WindowGroup {
             LaunchScreen()
                 }
+            ContentView()
         }
+    }
 }
 

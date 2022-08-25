@@ -17,6 +17,9 @@ struct ContentView: View {
     @State private var coins = [Coin]()
     @State private var posts = [BlogPost]()
     
+    @State private var video_an = [VideoAndrey]()
+    @State private var video_nf = [VideoNF]()
+    
     var body: some View {
         TabView() {
             
@@ -26,20 +29,20 @@ struct ContentView: View {
                 DailyView(indexes: $indexes, choices: $choices)
                     
             }.tabItem {
-                Label("Daily View", systemImage: "calendar.day.timeline.leading")
+                Label("Visão Diária", systemImage: "calendar.day.timeline.leading")
             }
             
             NavigationView{
                 AllCoins(coins: $coins)
                     
             }.tabItem {
-                Label("All Coins", systemImage: "bitcoinsign.circle")
+                Label("Top 20 Moedas", systemImage: "bitcoinsign.circle")
             }
             
             NavigationView{
-                NewsFeed(posts: $posts)
+                NewsFeed(posts: $posts, video_an: $video_an, video_nf: $video_nf)
             }.tabItem {
-                Label("News Feed", systemImage: "newspaper")
+                Label("Notícias", systemImage: "newspaper")
             }
             
             
@@ -57,8 +60,8 @@ struct ContentView: View {
             }
             Task {
                 self.posts = await n8nAPI.fetchPosts()
+                self.video_an = await n8nAPI.fetchVideosAN()
             }
-            
         }
     }
     
