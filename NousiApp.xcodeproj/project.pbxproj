@@ -35,6 +35,7 @@
 		D6FECA2128B5401D006B39AB /* AllCoins.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FECA2028B5401D006B39AB /* AllCoins.swift */; };
 		D6FECA2328B541DE006B39AB /* SortedByMarketCap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FECA2228B541DE006B39AB /* SortedByMarketCap.swift */; };
 		D6FECA2728B5601D006B39AB /* NewsFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FECA2628B5601D006B39AB /* NewsFeed.swift */; };
+		FCB3CBD328B7B2140008DEEA /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB3CBD228B7B2140008DEEA /* SplashScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		D6FECA2028B5401D006B39AB /* AllCoins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCoins.swift; sourceTree = "<group>"; };
 		D6FECA2228B541DE006B39AB /* SortedByMarketCap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortedByMarketCap.swift; sourceTree = "<group>"; };
 		D6FECA2628B5601D006B39AB /* NewsFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeed.swift; sourceTree = "<group>"; };
+		FCB3CBD228B7B2140008DEEA /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				D6FECA2028B5401D006B39AB /* AllCoins.swift */,
 				D6FECA2628B5601D006B39AB /* NewsFeed.swift */,
 				D61E01AD28B40EC3002F7B27 /* About.swift */,
+				FCB3CBD228B7B2140008DEEA /* SplashScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 				D61E019928AFFE12002F7B27 /* CoingeckoAPI.swift in Sources */,
 				D6FECA2328B541DE006B39AB /* SortedByMarketCap.swift in Sources */,
 				D61E01AE28B40EC3002F7B27 /* About.swift in Sources */,
+				FCB3CBD328B7B2140008DEEA /* SplashScreen.swift in Sources */,
 				D6871CAA28B57F9D00A166EC /* NotFoundList.swift in Sources */,
 				D61E019628AFFDD8002F7B27 /* CoinModel.swift in Sources */,
 				D61E01A228B3C77F002F7B27 /* n8nAPI.swift in Sources */,

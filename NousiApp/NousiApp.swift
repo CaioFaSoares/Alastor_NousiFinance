@@ -11,6 +11,8 @@ import SwiftUI
 struct NousiApp: App {
     var body: some Scene {
         WindowGroup {
+            LaunchScreen()
+                }
             ContentView()
         }
     }
