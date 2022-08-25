@@ -36,15 +36,15 @@ struct comNFBlogPosts: View {
         }
     }
     
-    static func regexContentLink(postPic: String) async -> String {
-        
-        var postPicChoppedLink: String = postPic
-        let range = NSRange(location: 0, length: postPicChoppedLink.utf16.count)
-        
-        let regex = try! NSRegularExpression(pattern: "/(?:(?:https?|ftp|file):\\/\\/|www\\.|ftp\\.)(?:\\([-A-Z0-9+&@#\\/%=~_|$?!:,.]*\\)|[-A-Z0-9+&@#\\/%=~_|$?!:,.])*(?:\\([-A-Z0-9+&@#\\/%=~_|$?!:,.]*\\)|[A-")
-        
-        return regex.firstMatch(in: postPicChoppedLink, options: [], range: range) != nil
-        
-    }
+//    static func regexContentLink(postPic: String) async -> String {
+//        
+//        var postPicChoppedLink: String = postPic
+//        let range = NSRange(location: 0, length: postPicChoppedLink.utf16.count)
+//        
+//        let regex = try! NSRegularExpression(pattern: "/(?:(?:https?|ftp|file):\\/\\/|www\\.|ftp\\.)(?:\\([-A-Z0-9+&@#\\/%=~_|$?!:,.]*\\)|[-A-Z0-9+&@#\\/%=~_|$?!:,.])*(?:\\([-A-Z0-9+&@#\\/%=~_|$?!:,.]*\\)|[A-")
+//        
+//        return regex.firstMatch(in: postPicChoppedLink, options: [], range: range) != nil
+//        
+//    }
     
 }

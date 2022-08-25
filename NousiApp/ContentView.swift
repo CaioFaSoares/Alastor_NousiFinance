@@ -42,6 +42,7 @@ struct ContentView: View {
                 Label("News Feed", systemImage: "newspaper")
             }
             
+            
         }
  
         .task{
