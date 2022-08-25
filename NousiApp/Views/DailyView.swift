@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct NewsLetter: View {
+struct DailyView: View {
     
-    @State private var choices = [TeamChoice]()
-    @State private var indexes = [Index]()
+    @Binding var indexes: [Index]
+    @Binding var choices: [TeamChoice]
     
     var body: some View {
         VStack {
@@ -31,20 +31,9 @@ struct NewsLetter: View {
                     Text("This is not a financial advice.")
                 }
             }
-            .task {
-                await choices = API_N8N.fetchTeamChoice()
-                await indexes = API_N8N.fetchIndexes()
-            }
-            .listStyle(.insetGrouped)
+            .navigationTitle("Daily View")
+            .listStyle(.grouped)
         }
-        .navigationBarHidden(false)
-        .navigationBarTitle("News Letter")
     }
     
-}
-
-struct NewsLetter_Previews: PreviewProvider {
-    static var previews: some View {
-        NewsLetter()
-    }
 }

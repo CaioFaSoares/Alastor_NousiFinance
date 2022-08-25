@@ -11,23 +11,23 @@ enum n8n_error: Error {
     case n8n_invalidServerResponse
 }
 
-class API_N8N {
+class n8nAPI {
     
     static func fetchIndexes() async -> [Index] {
         
         let requestURL = n8n_cloud_development_index
         
-        print("DEBUG: Iniciando fetch na API da N8N")
+        print("DEBUG: Iniciando fetch dos indexes.")
         
         do {
             let (data, _) = try await URLSession.shared.data(from: requestURL)
             let decodedResponse = try JSONDecoder().decode([Index].self, from: data)
             
-            print("DEBUG: Fetch na API da N8N feito com sucesso")
+            print("DEBUG: Fetch nos indexes concluido")
             
             return decodedResponse
         } catch {
-            print("DEBUG: Erro retornado na operação de Fetch na API da N8N")
+            print("DEBUG: Erro retornado no fetch dos indexes")
         }
         return []
     }
@@ -42,12 +42,32 @@ class API_N8N {
             let (data, _) = try await URLSession.shared.data(from: requestURL)
             let decodedResponse = try JSONDecoder().decode([TeamChoice].self, from: data)
             
-            print("DEBUG: Fetch na API da N8N das escolhas da equipe feito com sucesso")
+            print("DEBUG: Fetch das escolhas da equipe concluido")
             
             return decodedResponse
         } catch {
-            print("Deu ruim pae")
+            print(error)
         }
         return []
     }
+    
+    static func fetchPosts() async -> [BlogPost] {
+
+        let requestURL = n8n_cloud_development_blogPost
+        
+        print("DEBUG: Iniciando fetch dos posts")
+        
+        do {
+            let (data, _) = try await URLSession.shared.data(from: requestURL)
+            let decodedResponse = try JSONDecoder().decode([BlogPost].self, from: data)
+            
+            print("DEBUG: Fetch dos posts concluido")
+            
+            return decodedResponse
+        } catch {
+            print(error)
+        }
+        return []
+    }
+    
 }
