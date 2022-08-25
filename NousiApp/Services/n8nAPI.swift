@@ -70,4 +70,44 @@ class n8nAPI {
         return []
     }
     
+    static func fetchVideosAN() async -> [VideoAndrey] {
+        
+        let requestURL = n8n_cloud_development_video_an
+        
+        print("DEBUG: Iniciando fetch dos posts")
+        
+        do {
+            let (data, _) = try await URLSession.shared.data(from: requestURL)
+            let decodedResponse = try JSONDecoder().decode([VideoAndrey].self, from: data)
+            
+            print("DEBUG: Fetch dos posts concluido")
+            
+            return decodedResponse
+        } catch {
+            print(error)
+        }
+        return []
+        
+    }
+    
+    static func fetchVideosNF() async -> [VideoNF] {
+        
+        let requestURL = n8n_cloud_development_video_nf
+        
+        print("DEBUG: Iniciando fetch dos posts")
+        
+        do {
+            let (data, _) = try await URLSession.shared.data(from: requestURL)
+            let decodedResponse = try JSONDecoder().decode([VideoNF].self, from: data)
+            
+            print("DEBUG: Fetch dos posts concluido")
+            
+            return decodedResponse
+        } catch {
+            print(error)
+        }
+        return []
+        
+    }
+    
 }

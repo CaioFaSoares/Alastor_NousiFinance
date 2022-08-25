@@ -10,6 +10,8 @@ import SwiftUI
 struct NewsFeed: View {
     
     @Binding var posts: [BlogPost]
+    @Binding var video_an: [VideoAndrey]
+    @Binding var video_nf: [VideoNF]
     
     @State private var isBlogExpanded: Bool = false
     
@@ -28,10 +30,21 @@ struct NewsFeed: View {
                 Section {
                     comNFBlogPosts(posts: $posts)
                 } header: {
-                    Text("Blog Posts")
+                    Text("Posts do Blog")
                 }
-            }.listStyle(.grouped)
-            Spacer()
-        }.navigationTitle("News Feed")
+                Section {
+                    comNFAndreyVideo(video_an: $video_an)
+                } header: {
+                    Text("Youtube do Andrey")
+                }
+//                Section {
+//                    comNFNousiFinanceVideo(video_nf: $video_nf)
+//                } header: {
+//                    Text("Youtube da NousiFinance")
+//                }
+//                .listStyle(.grouped)
+        }.navigationTitle("Notícias")
+        Spacer()
+        }
     }
 }
