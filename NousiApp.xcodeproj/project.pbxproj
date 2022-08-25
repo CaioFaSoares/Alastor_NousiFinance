@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85D9BD6528B79DFC00697016 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 85D9BD6428B79DFC00697016 /* SwiftSoup */; };
 		D61E019628AFFDD8002F7B27 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E019528AFFDD8002F7B27 /* CoinModel.swift */; };
 		D61E019928AFFE12002F7B27 /* CoingeckoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E019828AFFE12002F7B27 /* CoingeckoAPI.swift */; };
 		D61E019D28B3B025002F7B27 /* DailyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E019C28B3B025002F7B27 /* DailyView.swift */; };
@@ -83,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85D9BD6528B79DFC00697016 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +249,9 @@
 			dependencies = (
 			);
 			name = NousiApp;
+			packageProductDependencies = (
+				85D9BD6428B79DFC00697016 /* SwiftSoup */,
+			);
 			productName = NousiApp;
 			productReference = D66D763E28AFD65A00BA701B /* NousiApp.app */;
 			productType = "com.apple.product-type.application";
@@ -319,6 +324,9 @@
 				Base,
 			);
 			mainGroup = D66D763528AFD65A00BA701B;
+			packageReferences = (
+				85D9BD6328B79DFC00697016 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = D66D763F28AFD65A00BA701B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -703,6 +711,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		85D9BD6328B79DFC00697016 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		85D9BD6428B79DFC00697016 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 85D9BD6328B79DFC00697016 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D66D763628AFD65A00BA701B /* Project object */;
 }
