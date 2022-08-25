@@ -15,6 +15,7 @@ struct ContentView: View {
     @State private var choices = [TeamChoice]()
     @State private var indexes = [Index]()
     @State private var coins = [Coin]()
+    @State private var posts = [BlogPost]()
     
     var body: some View {
         TabView() {
@@ -36,7 +37,7 @@ struct ContentView: View {
             }
             
             NavigationView{
-                NewsFeed()
+                NewsFeed(posts: $posts)
             }.tabItem {
                 Label("News Feed", systemImage: "newspaper")
             }
@@ -53,7 +54,10 @@ struct ContentView: View {
             Task {
                 self.choices = await n8nAPI.fetchTeamChoice()
             }
-                            
+            Task {
+                self.posts = await n8nAPI.fetchPosts()
+            }
+            
         }
     }
     

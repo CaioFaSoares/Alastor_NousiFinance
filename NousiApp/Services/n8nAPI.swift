@@ -50,4 +50,24 @@ class n8nAPI {
         }
         return []
     }
+    
+    static func fetchPosts() async -> [BlogPost] {
+
+        let requestURL = n8n_cloud_development_blogPost
+        
+        print("DEBUG: Iniciando fetch dos posts")
+        
+        do {
+            let (data, _) = try await URLSession.shared.data(from: requestURL)
+            let decodedResponse = try JSONDecoder().decode([BlogPost].self, from: data)
+            
+            print("DEBUG: Fetch dos posts concluido")
+            
+            return decodedResponse
+        } catch {
+            print(error)
+        }
+        return []
+    }
+    
 }

@@ -26,6 +26,7 @@
 		D66D765F28AFD66100BA701B /* NousiAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66D765E28AFD66100BA701B /* NousiAppUITestsLaunchTests.swift */; };
 		D6871CAA28B57F9D00A166EC /* NotFoundList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6871CA928B57F9D00A166EC /* NotFoundList.swift */; };
 		D6871CAC28B5C3DD00A166EC /* BlogPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6871CAB28B5C3DD00A166EC /* BlogPostModel.swift */; };
+		D6871CAF28B65F3000A166EC /* BlogFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6871CAE28B65F2F00A166EC /* BlogFeed.swift */; };
 		D6FECA2128B5401D006B39AB /* AllCoins.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FECA2028B5401D006B39AB /* AllCoins.swift */; };
 		D6FECA2328B541DE006B39AB /* SortedByMarketCap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FECA2228B541DE006B39AB /* SortedByMarketCap.swift */; };
 		D6FECA2728B5601D006B39AB /* NewsFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FECA2628B5601D006B39AB /* NewsFeed.swift */; };
@@ -71,6 +72,7 @@
 		D66D765E28AFD66100BA701B /* NousiAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NousiAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D6871CA928B57F9D00A166EC /* NotFoundList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotFoundList.swift; sourceTree = "<group>"; };
 		D6871CAB28B5C3DD00A166EC /* BlogPostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPostModel.swift; sourceTree = "<group>"; };
+		D6871CAE28B65F2F00A166EC /* BlogFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogFeed.swift; sourceTree = "<group>"; };
 		D6FECA2028B5401D006B39AB /* AllCoins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCoins.swift; sourceTree = "<group>"; };
 		D6FECA2228B541DE006B39AB /* SortedByMarketCap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortedByMarketCap.swift; sourceTree = "<group>"; };
 		D6FECA2628B5601D006B39AB /* NewsFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeed.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 		D61E019428AFFD89002F7B27 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				D6871CAD28B65E2E00A166EC /* NewsFeed Components */,
 				D6FECA2428B5435F006B39AB /* TeamChoice Components */,
 				D6FECA2528B5436C006B39AB /* AllCoins Components */,
 			);
@@ -200,6 +203,14 @@
 				D66D765E28AFD66100BA701B /* NousiAppUITestsLaunchTests.swift */,
 			);
 			path = NousiAppUITests;
+			sourceTree = "<group>";
+		};
+		D6871CAD28B65E2E00A166EC /* NewsFeed Components */ = {
+			isa = PBXGroup;
+			children = (
+				D6871CAE28B65F2F00A166EC /* BlogFeed.swift */,
+			);
+			path = "NewsFeed Components";
 			sourceTree = "<group>";
 		};
 		D6FECA2428B5435F006B39AB /* TeamChoice Components */ = {
@@ -351,6 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D61E01A428B3E3B0002F7B27 /* urls.swift in Sources */,
+				D6871CAF28B65F3000A166EC /* BlogFeed.swift in Sources */,
 				D61E019F28B3C696002F7B27 /* MarketIndicator.swift in Sources */,
 				D625576728B4618E00D48ADB /* TeamChoiceModel.swift in Sources */,
 				D6871CAC28B5C3DD00A166EC /* BlogPostModel.swift in Sources */,
