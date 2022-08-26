@@ -12,13 +12,13 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var choices = [TeamChoice]()
-    @State private var indexes = [Index]()
-    @State private var coins = [Coin]()
-    @State private var posts = [BlogPost]()
+    @Binding var choices: [TeamChoice]
+    @Binding var indexes: [Index]
+    @Binding var coins: [Coin]
+    @Binding var posts: [BlogPost]
     
-    @State private var video_an = [VideoAndrey]()
-    @State private var video_nf = [VideoNF]()
+    @Binding var video_an: [VideoAndrey]
+    @Binding var video_nf: [VideoNF]
     
     var body: some View {
         TabView() {
@@ -48,27 +48,6 @@ struct ContentView: View {
             
         }
  
-        .task{
-            Task {
-                self.coins = await GeckoAPI.getAllCoinsMarketData()
-            }
-            Task {
-                self.indexes = await n8nAPI.fetchIndexes()
-            }
-            Task {
-                self.choices = await n8nAPI.fetchTeamChoice()
-            }
-            Task {
-                self.posts = await n8nAPI.fetchPosts()
-                self.video_an = await n8nAPI.fetchVideosAN()
-            }
-        }
     }
     
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
 }

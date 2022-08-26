@@ -5,9 +5,17 @@ struct LaunchScreen: View {
     
     @State private var isActive = false
     
+    @Binding var choices: [TeamChoice]
+    @Binding var indexes: [Index]
+    @Binding var coins: [Coin]
+    @Binding var posts: [BlogPost]
+    
+    @Binding var video_an: [VideoAndrey]
+    @Binding var video_nf: [VideoNF]
+    
     var body: some View {
         if isActive{
-            ContentView()
+            ContentView(choices: $choices, indexes: $indexes, coins: $coins, posts: $posts, video_an: $video_an, video_nf: $video_nf)
         } else {
             ZStack{
                 Color.green
@@ -26,30 +34,23 @@ struct LaunchScreen: View {
                     Spacer()
                     
                     HStack{
-                        Text("Developed by")
-                        Text("Copland").foregroundColor(Color.blue)
+                        Text("Developed  by")
+                        Text("COPLaND").foregroundColor(Color.blue)
                     }.font(.system(size: 10))
                         .padding(.bottom, 20)
                     
                 }
             }.ignoresSafeArea()
                 .onAppear(){
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 2.0){
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 10.0){
                         self.isActive = true
                     }
                 }
+                
                 
         }
         
         
             
-    }
-}
-
-
-
-struct LaunchScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        LaunchScreen()
     }
 }
