@@ -18,20 +18,20 @@ struct DailyView: View {
                 Section {
                     com_NL_MarketIndicator(indexes: $indexes)
                 } header: {
-                    Text("Market Indicators")
+                    Text("Indicadores de Mercado")
                 } footer: {
-                    Text("Data source on the about page.")
+                    Text("Fontes na página de sobre.")
                 }
                 
                 Section {
                     com_NL_TeamsChoice(choices: $choices)
                 } header: {
-                    Text("Team's Choices")
+                    Text("Escolhas da equipe Nousi")
                 } footer: {
-                    Text("This is not a financial advice.")
+                    Text("Isso não é uma dica financeira")
                 }
             }
-            .navigationTitle("Daily View")
+            .navigationTitle("Visão Diária")
             .listStyle(.grouped)
         }
     }

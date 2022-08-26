@@ -12,10 +12,13 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var choices = [TeamChoice]()
-    @State private var indexes = [Index]()
-    @State private var coins = [Coin]()
-    @State private var posts = [BlogPost]()
+    @Binding var choices: [TeamChoice]
+    @Binding var indexes: [Index]
+    @Binding var coins: [Coin]
+    @Binding var posts: [BlogPost]
+    
+    @Binding var video_an: [VideoAndrey]
+    @Binding var video_nf: [VideoNF]
     
     var body: some View {
         TabView() {
@@ -26,45 +29,25 @@ struct ContentView: View {
                 DailyView(indexes: $indexes, choices: $choices)
                     
             }.tabItem {
-                Label("Daily View", systemImage: "calendar.day.timeline.leading")
+                Label("Visão Diária", systemImage: "calendar.day.timeline.leading")
             }
             
             NavigationView{
                 AllCoins(coins: $coins)
                     
             }.tabItem {
-                Label("All Coins", systemImage: "bitcoinsign.circle")
+                Label("Top 20 Moedas", systemImage: "bitcoinsign.circle")
             }
             
             NavigationView{
-                NewsFeed(posts: $posts)
+                NewsFeed(posts: $posts, video_an: $video_an, video_nf: $video_nf)
             }.tabItem {
-                Label("News Feed", systemImage: "newspaper")
+                Label("Notícias", systemImage: "newspaper")
             }
+            
             
         }
  
-        .task{
-            Task {
-                self.coins = await GeckoAPI.getAllCoinsMarketData()
-            }
-            Task {
-                self.indexes = await n8nAPI.fetchIndexes()
-            }
-            Task {
-                self.choices = await n8nAPI.fetchTeamChoice()
-            }
-            Task {
-                self.posts = await n8nAPI.fetchPosts()
-            }
-            
-        }
     }
     
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
 }
