@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftSoup
 
 struct comNFBlogPosts: View {
     
@@ -15,11 +16,11 @@ struct comNFBlogPosts: View {
         Section {
             ForEach (posts.prefix(3), id: \.guid ) { post in
                 HStack {
-//                    AsyncImage(url: URL(string: post.content)!) { image in
-//                        image.resizable()
-//                    } placeholder: {
-//                        ProgressView()
-//                    } .frame(width: 20, height: 20)
+                    AsyncImage(url: URL(string: extractLinkImageFromContent(content: post.content ?? "invalid" ) ?? "invalid")!) { image in
+                        image.resizable()
+                    } placeholder: {
+                        ProgressView()
+                    } .frame(width: 20, height: 20)
                     VStack{
                         HStack{
                             Text(post.title)
@@ -35,16 +36,24 @@ struct comNFBlogPosts: View {
             }
         }
     }
-    
-//    static func regexContentLink(postPic: String) async -> String {
-//        
-//        var postPicChoppedLink: String = postPic
-//        let range = NSRange(location: 0, length: postPicChoppedLink.utf16.count)
-//        
-//        let regex = try! NSRegularExpression(pattern: "/(?:(?:https?|ftp|file):\\/\\/|www\\.|ftp\\.)(?:\\([-A-Z0-9+&@#\\/%=~_|$?!:,.]*\\)|[-A-Z0-9+&@#\\/%=~_|$?!:,.])*(?:\\([-A-Z0-9+&@#\\/%=~_|$?!:,.]*\\)|[A-")
-//        
-//        return regex.firstMatch(in: postPicChoppedLink, options: [], range: range) != nil
-//        
-//    }
+   
+    func extractLinkImageFromContent(content: String) -> String? {
+        do {
+            print(content)
+            let doc: Document = try SwiftSoup.parse(content)
+            guard let link: Element = try doc.select("img").first() else {
+                return nil
+            }
+            let src: String =  try link.attr("src")
+            print(src)
+            return src
+        } catch Exception.Error(_, let message) {
+            print(message)
+        } catch {
+            print("error")
+        }
+        
+        return nil
+    }
     
 }
