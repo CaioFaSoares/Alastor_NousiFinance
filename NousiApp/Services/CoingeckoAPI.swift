@@ -32,13 +32,13 @@ struct GeckoAPI {
         let decoder = JSONDecoder()
 //        decoder.keyDecodingStrategy = .convertFromSnakeCase
         
-        print("DEBUG: Iniciando fetch da Coingecko")
+        
         
         do {
             let (data, response) = try await URLSession.shared.data(for: request)
             let coins = try decoder.decode([Coin].self, from: data)
             
-            print("DEBUG: Fetch da Coingecko concluido")
+            
             
             return coins
             

@@ -30,7 +30,7 @@ struct LaunchScreen: View {
                         .frame(width: 200, height: 200)
                     
                     ProgressView(value: 0.75)
-                        .progressViewStyle(CircularProgressViewStyle())
+                        .progressViewStyle(LinearProgressViewStyle())
                     Spacer()
                     
                     HStack{
