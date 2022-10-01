@@ -7,12 +7,17 @@
 
 import SwiftUI
 
-//Testing the dev branch setup
+//Testing the dev branch setup... again... you know what? Fuck this. Fuck dev branching.
 
 struct ContentView: View {
     var body: some View {
-        Text("andre nose")
-            .padding()
+        NavigationView {
+            TabView() {
+                NewsLetter()
+
+            }
+        }
+        .navigationBarHidden(true)
     }
 }
 
