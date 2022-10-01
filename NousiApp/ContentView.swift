@@ -8,17 +8,59 @@
 import SwiftUI
 
 //Testing the dev branch setup... again... you know what? Fuck this. Fuck dev branching.
+//Guess we are dev branching after all.
 
 struct ContentView: View {
+    
+    @State private var choices = [TeamChoice]()
+    @State private var indexes = [Index]()
+    @State private var coins = [Coin]()
+    @State private var posts = [BlogPost]()
+    
     var body: some View {
-        NavigationView {
-            TabView() {
-                NewsLetter()
-
+        TabView() {
+            
+            //Read on Swift documentation that we aren't supposed to put TabViews inside of NavigationViews. That's why the refactoring
+            
+            NavigationView{
+                DailyView(indexes: $indexes, choices: $choices)
+                    
+            }.tabItem {
+                Label("Daily View", systemImage: "calendar.day.timeline.leading")
             }
+            
+            NavigationView{
+                AllCoins(coins: $coins)
+                    
+            }.tabItem {
+                Label("All Coins", systemImage: "bitcoinsign.circle")
+            }
+            
+            NavigationView{
+                NewsFeed(posts: $posts)
+            }.tabItem {
+                Label("News Feed", systemImage: "newspaper")
+            }
+            
         }
-        .navigationBarHidden(true)
+ 
+        .task{
+            Task {
+                self.coins = await GeckoAPI.getAllCoinsMarketData()
+            }
+            Task {
+                self.indexes = await n8nAPI.fetchIndexes()
+            }
+            Task {
+                self.choices = await n8nAPI.fetchTeamChoice()
+            }
+            Task {
+                self.posts = await n8nAPI.fetchPosts()
+            }
+            
+        }
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

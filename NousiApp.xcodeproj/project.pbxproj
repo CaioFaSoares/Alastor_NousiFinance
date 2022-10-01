@@ -7,16 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85D9BD6528B79DFC00697016 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 85D9BD6428B79DFC00697016 /* SwiftSoup */; };
 		D61E019628AFFDD8002F7B27 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E019528AFFDD8002F7B27 /* CoinModel.swift */; };
 		D61E019928AFFE12002F7B27 /* CoingeckoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E019828AFFE12002F7B27 /* CoingeckoAPI.swift */; };
-		D61E019D28B3B025002F7B27 /* NewsLetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E019C28B3B025002F7B27 /* NewsLetter.swift */; };
-		D61E019F28B3C696002F7B27 /* NL_MarketIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E019E28B3C696002F7B27 /* NL_MarketIndicator.swift */; };
+		D61E019D28B3B025002F7B27 /* DailyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E019C28B3B025002F7B27 /* DailyView.swift */; };
+		D61E019F28B3C696002F7B27 /* MarketIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E019E28B3C696002F7B27 /* MarketIndicator.swift */; };
 		D61E01A228B3C77F002F7B27 /* n8nAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E01A128B3C77F002F7B27 /* n8nAPI.swift */; };
 		D61E01A428B3E3B0002F7B27 /* urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E01A328B3E3B0002F7B27 /* urls.swift */; };
 		D61E01A628B3E568002F7B27 /* IndexModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E01A528B3E568002F7B27 /* IndexModel.swift */; };
-		D61E01A828B3F47A002F7B27 /* NL_TeamsChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E01A728B3F47A002F7B27 /* NL_TeamsChoice.swift */; };
-		D61E01AA28B3F5D5002F7B27 /* NL_AllCoins.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E01A928B3F5D5002F7B27 /* NL_AllCoins.swift */; };
-		D61E01AC28B3F5ED002F7B27 /* NL_Blog.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E01AB28B3F5ED002F7B27 /* NL_Blog.swift */; };
+		D61E01A828B3F47A002F7B27 /* TeamChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E01A728B3F47A002F7B27 /* TeamChoice.swift */; };
 		D61E01AE28B40EC3002F7B27 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E01AD28B40EC3002F7B27 /* About.swift */; };
 		D625576728B4618E00D48ADB /* TeamChoiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D625576628B4618E00D48ADB /* TeamChoiceModel.swift */; };
 		D66D764228AFD65A00BA701B /* NousiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66D764128AFD65A00BA701B /* NousiApp.swift */; };
@@ -26,6 +25,12 @@
 		D66D765328AFD66100BA701B /* NousiAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66D765228AFD66100BA701B /* NousiAppTests.swift */; };
 		D66D765D28AFD66100BA701B /* NousiAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66D765C28AFD66100BA701B /* NousiAppUITests.swift */; };
 		D66D765F28AFD66100BA701B /* NousiAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66D765E28AFD66100BA701B /* NousiAppUITestsLaunchTests.swift */; };
+		D6871CAA28B57F9D00A166EC /* NotFoundList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6871CA928B57F9D00A166EC /* NotFoundList.swift */; };
+		D6871CAC28B5C3DD00A166EC /* BlogPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6871CAB28B5C3DD00A166EC /* BlogPostModel.swift */; };
+		D6871CAF28B65F3000A166EC /* BlogFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6871CAE28B65F2F00A166EC /* BlogFeed.swift */; };
+		D6FECA2128B5401D006B39AB /* AllCoins.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FECA2028B5401D006B39AB /* AllCoins.swift */; };
+		D6FECA2328B541DE006B39AB /* SortedByMarketCap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FECA2228B541DE006B39AB /* SortedByMarketCap.swift */; };
+		D6FECA2728B5601D006B39AB /* NewsFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FECA2628B5601D006B39AB /* NewsFeed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,14 +53,12 @@
 /* Begin PBXFileReference section */
 		D61E019528AFFDD8002F7B27 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
 		D61E019828AFFE12002F7B27 /* CoingeckoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoingeckoAPI.swift; sourceTree = "<group>"; };
-		D61E019C28B3B025002F7B27 /* NewsLetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsLetter.swift; sourceTree = "<group>"; };
-		D61E019E28B3C696002F7B27 /* NL_MarketIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NL_MarketIndicator.swift; sourceTree = "<group>"; };
+		D61E019C28B3B025002F7B27 /* DailyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyView.swift; sourceTree = "<group>"; };
+		D61E019E28B3C696002F7B27 /* MarketIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketIndicator.swift; sourceTree = "<group>"; };
 		D61E01A128B3C77F002F7B27 /* n8nAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = n8nAPI.swift; sourceTree = "<group>"; };
 		D61E01A328B3E3B0002F7B27 /* urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = urls.swift; sourceTree = "<group>"; };
 		D61E01A528B3E568002F7B27 /* IndexModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexModel.swift; sourceTree = "<group>"; };
-		D61E01A728B3F47A002F7B27 /* NL_TeamsChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NL_TeamsChoice.swift; sourceTree = "<group>"; };
-		D61E01A928B3F5D5002F7B27 /* NL_AllCoins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NL_AllCoins.swift; sourceTree = "<group>"; };
-		D61E01AB28B3F5ED002F7B27 /* NL_Blog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NL_Blog.swift; sourceTree = "<group>"; };
+		D61E01A728B3F47A002F7B27 /* TeamChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamChoice.swift; sourceTree = "<group>"; };
 		D61E01AD28B40EC3002F7B27 /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
 		D625576628B4618E00D48ADB /* TeamChoiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamChoiceModel.swift; sourceTree = "<group>"; };
 		D66D763E28AFD65A00BA701B /* NousiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NousiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +71,12 @@
 		D66D765828AFD66100BA701B /* NousiAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NousiAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D66D765C28AFD66100BA701B /* NousiAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NousiAppUITests.swift; sourceTree = "<group>"; };
 		D66D765E28AFD66100BA701B /* NousiAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NousiAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D6871CA928B57F9D00A166EC /* NotFoundList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotFoundList.swift; sourceTree = "<group>"; };
+		D6871CAB28B5C3DD00A166EC /* BlogPostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPostModel.swift; sourceTree = "<group>"; };
+		D6871CAE28B65F2F00A166EC /* BlogFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogFeed.swift; sourceTree = "<group>"; };
+		D6FECA2028B5401D006B39AB /* AllCoins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCoins.swift; sourceTree = "<group>"; };
+		D6FECA2228B541DE006B39AB /* SortedByMarketCap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortedByMarketCap.swift; sourceTree = "<group>"; };
+		D6FECA2628B5601D006B39AB /* NewsFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85D9BD6528B79DFC00697016 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,9 +108,10 @@
 		D61E019228AFFD7C002F7B27 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D625576628B4618E00D48ADB /* TeamChoiceModel.swift */,
+				D6871CAB28B5C3DD00A166EC /* BlogPostModel.swift */,
 				D61E019528AFFDD8002F7B27 /* CoinModel.swift */,
 				D61E01A528B3E568002F7B27 /* IndexModel.swift */,
-				D625576628B4618E00D48ADB /* TeamChoiceModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -108,21 +119,22 @@
 		D61E019328AFFD82002F7B27 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D61E019C28B3B025002F7B27 /* NewsLetter.swift */,
+				D61E019C28B3B025002F7B27 /* DailyView.swift */,
+				D6FECA2028B5401D006B39AB /* AllCoins.swift */,
+				D6FECA2628B5601D006B39AB /* NewsFeed.swift */,
 				D61E01AD28B40EC3002F7B27 /* About.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		D61E019428AFFD89002F7B27 /* ViewModels */ = {
+		D61E019428AFFD89002F7B27 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				D61E019E28B3C696002F7B27 /* NL_MarketIndicator.swift */,
-				D61E01A728B3F47A002F7B27 /* NL_TeamsChoice.swift */,
-				D61E01A928B3F5D5002F7B27 /* NL_AllCoins.swift */,
-				D61E01AB28B3F5ED002F7B27 /* NL_Blog.swift */,
+				D6871CAD28B65E2E00A166EC /* NewsFeed Components */,
+				D6FECA2428B5435F006B39AB /* TeamChoice Components */,
+				D6FECA2528B5436C006B39AB /* AllCoins Components */,
 			);
-			path = ViewModels;
+			path = Components;
 			sourceTree = "<group>";
 		};
 		D61E019728AFFDDC002F7B27 /* Services */ = {
@@ -158,12 +170,12 @@
 		D66D764028AFD65A00BA701B /* NousiApp */ = {
 			isa = PBXGroup;
 			children = (
+				D66D764128AFD65A00BA701B /* NousiApp.swift */,
+				D66D764328AFD65A00BA701B /* ContentView.swift */,
 				D61E019728AFFDDC002F7B27 /* Services */,
 				D61E019228AFFD7C002F7B27 /* Models */,
 				D61E019328AFFD82002F7B27 /* Views */,
-				D61E019428AFFD89002F7B27 /* ViewModels */,
-				D66D764128AFD65A00BA701B /* NousiApp.swift */,
-				D66D764328AFD65A00BA701B /* ContentView.swift */,
+				D61E019428AFFD89002F7B27 /* Components */,
 				D66D764528AFD66100BA701B /* Assets.xcassets */,
 				D66D764728AFD66100BA701B /* Preview Content */,
 			);
@@ -195,6 +207,32 @@
 			path = NousiAppUITests;
 			sourceTree = "<group>";
 		};
+		D6871CAD28B65E2E00A166EC /* NewsFeed Components */ = {
+			isa = PBXGroup;
+			children = (
+				D6871CAE28B65F2F00A166EC /* BlogFeed.swift */,
+			);
+			path = "NewsFeed Components";
+			sourceTree = "<group>";
+		};
+		D6FECA2428B5435F006B39AB /* TeamChoice Components */ = {
+			isa = PBXGroup;
+			children = (
+				D61E019E28B3C696002F7B27 /* MarketIndicator.swift */,
+				D61E01A728B3F47A002F7B27 /* TeamChoice.swift */,
+			);
+			path = "TeamChoice Components";
+			sourceTree = "<group>";
+		};
+		D6FECA2528B5436C006B39AB /* AllCoins Components */ = {
+			isa = PBXGroup;
+			children = (
+				D6FECA2228B541DE006B39AB /* SortedByMarketCap.swift */,
+				D6871CA928B57F9D00A166EC /* NotFoundList.swift */,
+			);
+			path = "AllCoins Components";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -211,6 +249,9 @@
 			dependencies = (
 			);
 			name = NousiApp;
+			packageProductDependencies = (
+				85D9BD6428B79DFC00697016 /* SwiftSoup */,
+			);
 			productName = NousiApp;
 			productReference = D66D763E28AFD65A00BA701B /* NousiApp.app */;
 			productType = "com.apple.product-type.application";
@@ -283,6 +324,9 @@
 				Base,
 			);
 			mainGroup = D66D763528AFD65A00BA701B;
+			packageReferences = (
+				85D9BD6328B79DFC00697016 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = D66D763F28AFD65A00BA701B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -325,20 +369,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D61E01AA28B3F5D5002F7B27 /* NL_AllCoins.swift in Sources */,
 				D61E01A428B3E3B0002F7B27 /* urls.swift in Sources */,
-				D61E019F28B3C696002F7B27 /* NL_MarketIndicator.swift in Sources */,
+				D6871CAF28B65F3000A166EC /* BlogFeed.swift in Sources */,
+				D61E019F28B3C696002F7B27 /* MarketIndicator.swift in Sources */,
 				D625576728B4618E00D48ADB /* TeamChoiceModel.swift in Sources */,
-				D61E01AC28B3F5ED002F7B27 /* NL_Blog.swift in Sources */,
+				D6871CAC28B5C3DD00A166EC /* BlogPostModel.swift in Sources */,
+				D6FECA2728B5601D006B39AB /* NewsFeed.swift in Sources */,
 				D66D764428AFD65A00BA701B /* ContentView.swift in Sources */,
 				D61E01A628B3E568002F7B27 /* IndexModel.swift in Sources */,
 				D61E019928AFFE12002F7B27 /* CoingeckoAPI.swift in Sources */,
+				D6FECA2328B541DE006B39AB /* SortedByMarketCap.swift in Sources */,
 				D61E01AE28B40EC3002F7B27 /* About.swift in Sources */,
+				D6871CAA28B57F9D00A166EC /* NotFoundList.swift in Sources */,
 				D61E019628AFFDD8002F7B27 /* CoinModel.swift in Sources */,
 				D61E01A228B3C77F002F7B27 /* n8nAPI.swift in Sources */,
-				D61E019D28B3B025002F7B27 /* NewsLetter.swift in Sources */,
+				D61E019D28B3B025002F7B27 /* DailyView.swift in Sources */,
 				D66D764228AFD65A00BA701B /* NousiApp.swift in Sources */,
-				D61E01A828B3F47A002F7B27 /* NL_TeamsChoice.swift in Sources */,
+				D61E01A828B3F47A002F7B27 /* TeamChoice.swift in Sources */,
+				D6FECA2128B5401D006B39AB /* AllCoins.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -663,6 +711,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		85D9BD6328B79DFC00697016 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		85D9BD6428B79DFC00697016 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 85D9BD6328B79DFC00697016 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D66D763628AFD65A00BA701B /* Project object */;
 }

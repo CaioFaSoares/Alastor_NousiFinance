@@ -9,8 +9,11 @@ import SwiftUI
 
 struct AboutView: View {
     var body: some View {
-        VStack {
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack (alignment: .leading) {
+            Text("Developed by COPLaND Art House")
+                .font(.title)
+            Text("Indexes taken from alternative.me and altcoinseasonindex.com")
+                .font(.subheadline)
         }
     }
 }
