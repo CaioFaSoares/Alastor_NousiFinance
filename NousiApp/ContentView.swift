@@ -10,6 +10,8 @@ import SwiftUI
 //Testing the dev branch setup... again... you know what? Fuck this. Fuck dev branching.
 //Guess we are dev branching after all.
 
+//quem faz o palhaço rir
+
 struct ContentView: View {
     
     @Binding var choices: [TeamChoice]
